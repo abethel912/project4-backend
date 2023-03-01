@@ -6,4 +6,4 @@ class Recipes(models.Model):
     cuisine = models.CharField(max_length=100)
     ingredients = models.CharField(max_length=500)
     directions = models.CharField(max_length=5000)
-    time = models.PositiveBigIntegerField
+    time = models.PositiveBigIntegerField()
