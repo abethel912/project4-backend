@@ -4,7 +4,7 @@ from rest_framework import permissions
 from .serializers import RecipeSerializer
 
 
-class TodoViewSet(viewsets.ModelViewSet):
+class RecipeViewSet(viewsets.ModelViewSet):
     queryset = Recipes.objects.all()
     serializer_class = RecipeSerializer
     permission_classes = [permissions.AllowAny]
